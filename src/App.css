@@ -1,31 +1,70 @@
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
+::-moz-selection { 
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+} 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 40s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(white, #716ef9);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
+.section1 {
+  background-image: linear-gradient(#716ef9, white);}
+.section2 {
+  background-image: linear-gradient(white, #716ef9);}
+.section3 {
+  background-image: linear-gradient(#716ef9, white);}
+.preventCov div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px 100px;
+  padding: 10px;
+}
+.productz div img {
+  max-width: 35vw;
+}
 
+.productz div div img {
+  display: block;
+}
+
+.productz div div button {
+  display: block;
+}
+
+
+.button.btn.btn-danger{
+  margin:90%;
+  padding: 1%;
+} 
 .App-link {
-  color: #61dafb;
+  color: #1a00ad;
 }
 
 @keyframes App-logo-spin {
