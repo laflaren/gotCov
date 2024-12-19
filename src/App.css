@@ -7,16 +7,19 @@
   pointer-events: none;
 }
 
-::-moz-selection { 
-  color: red;
-  background: yellow;
-}
-
 ::selection {
-  color: red;
   background: yellow;
 } 
 
+li { 
+  list-style-type: "◯"; 
+  text-align: left;
+
+}
+/* .centeredBox{
+  margin: 0% 20% 20% 20%;
+}
+ */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 40s linear;
@@ -24,48 +27,56 @@
 }
 
 .App-header {
-  background-image: linear-gradient(white, #716ef9);
+  background-image: linear-gradient(#716ef9, white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* font-size: calc(10px + 2vmin); */
-  color: white;
+  color: blue;
 }
-.section1 {
-  background-image: linear-gradient(#716ef9, white);}
-.section2 {
-  background-image: linear-gradient(white, #716ef9);}
-.section3 {
-  background-image: linear-gradient(#716ef9, white);}
-.preventCov div {
+.productz .section1 {
+  padding: 0 15vw;
+}
+.productz div {
+  padding: 3px;
+}
+.preventCov {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: 100px;
-  grid-template-columns: 100px 100px;
-  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.duringCov {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.healCov {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .productz div img {
-  max-width: 35vw;
+  max-width: 25vw;
 }
 
-.productz div div img {
-  display: block;
-}
-
-.productz div div button {
-  display: block;
-}
-
-
-.button.btn.btn-danger{
-  margin:90%;
-  padding: 1%;
-} 
 .App-link {
   color: #1a00ad;
 }
+
+button {
+  border: 2px solid black;
+  background-color: white;
+  padding: 5px 28px;
+  font-size: 16px;
+  border-color: #716ef9;
+  color: #716ef9;
+  border-radius: 5%;
+}
+
+button:hover {
+  background: #2196F3;
+  color: white;
+}
+
 
 @keyframes App-logo-spin {
   from {

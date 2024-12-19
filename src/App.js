@@ -10,7 +10,7 @@ function App() {
 
 
       <header className="App-header">
-      <h1> Avoid and manage Covid </h1>
+      <h1> Manage Covid </h1>
 
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Coronavirus._SARS-CoV-2.png/1920px-Coronavirus._SARS-CoV-2.png" className="App-logo" alt="SARS virus rotating" />
         <title>
@@ -53,17 +53,18 @@ function App() {
 <div className='productz'>
 
   <div className='section1'>
-    <div classname="preventCov"> 
+    <div className="preventCov"> 
       {products.preventcov.map((preventcov) => ( //map has to be on ARRAY, not object 
-      <div> <div className=''> 
+   <div className='buddysys'> 
       <img src={preventcov.imgsrc} alt={preventcov.alttext} /> 
+      <br />
       <button className variant="danger">{preventcov.buttonprice} <br></br>
       {preventcov.description}
 
       </button>
     
       </div> 
-      </div>
+ 
       ))}
     </div>
     </div>
@@ -72,37 +73,37 @@ function App() {
     <div className='section2'>
   <p> So, you're sick. Let's create a personalized schedule: </p>
   <p> Day's priorities: Rest, medicate, be outside as much as possible</p>
-  
-  <ol> 🌞 Morning: </ol>
-  <li> Anti-histamine </li>
-  <li> Gargle green tea or black tea </li>
-  <li> </li>
-  <li> Get outside in sunlight as much as possible, while unmasked as much as possible. </li>
-  <li>  </li>
+  <div className="centeredBox">
+  <ol> ☀️ Morning: </ol>
+  <li> Take an anti-histamine to help with inflammation </li>
+  <li> Gargle tea to disrupt virus's replication </li>
+  <li> Get outside in sunlight as much as possible, while unmasked as much as possible to kill and release viral load. </li>
+  <li> Paxlovid or other antiviral </li>
 
-  <ol> 🌞 Midday: </ol>
-  <li>  </li>
+  <ol> 🌤️ Midday: </ol>
+  <li> Get outside in sunlight as much as possible, while unmasked as much as possible to kill and release viral load. </li>
   <li>  </li>
   <li>  </li>
 
 
   <ol> 🌙 Evening: </ol>
-  <li> Gargle chamomille tea </li>
+  <li> Gargle herbal tea </li>
   <li> Melatonin </li>
-  <li>  </li>
+  <li> Paxlovid or other antiviral </li>
   <li>  </li>
   <li>  </li>
   </div>
+</div>
 
-
-  <iframe style={{"borderRadius":"12px"}} src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1T2fEo0ROQ2?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+  <iframe style={{"borderRadius":"12px"}} src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1T2fEo0ROQ2?utm_source=generator&theme=0" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
   </iframe>
 
   <div className='section3'>
   <div className="duringCov"> 
         {products.duringcovid.map(duringcovid =>
-          <div> <img src={duringcovid.imgsrc} alt={duringcovid.alttext} />
-          <button variant="danger">{duringcovid.buttonprice} <br></br>
+          <div className='buddysys'> <img src={duringcovid.imgsrc} alt={duringcovid.alttext} />
+          <br />
+          <button variant="danger">{duringcovid.buttonprice} <br />
           {duringcovid.description}
           </button>
         
@@ -112,12 +113,16 @@ function App() {
         )}
       </div>
 
-    <p> So you made out of the worst part. Congratulations! </p>
-    <div className="afterCov"> 
-      {products.aftercovid.map(aftercovid =>
-        <div> <img src={aftercovid.imgsrc} alt={aftercovid.alttext} />
-        <button variant="danger">{aftercovid.buttonprice} <br></br>
-        {aftercovid.description}
+    <p> So you made out of the worst part. 
+    <br />
+    Congratulations! Let's aim for healing: </p>
+
+    <div className="healCov"> 
+      {products.healcovid.map(healcovid =>
+        <div className='buddysys'> <img src={healcovid.imgsrc} alt={healcovid.alttext} />
+        <br />
+        <button variant="danger">{healcovid.buttonprice} <br></br>
+        {healcovid.description}
         </button>
         </div>
       )}
@@ -133,10 +138,7 @@ If you don't have time to find a neti pot, try using a clean gravy boat or tea p
     
     <footer className='Footer'>
       <h4> 
-      Venmo: Natalya-L
-      </h4>
-      <h4>
-      Cashapp: 
+      Venmo: pleaselive
       </h4>
       <p>  
       Sources: <a href="https://pharmd.substack.com/p/i-have-covid-what-should-my-kids"> https://pharmd.substack.com/p/i-have-covid-what-should-my-kids </a> 

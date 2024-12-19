@@ -9,8 +9,8 @@
  "alttext" : "n95 masks protect again 95% of air particles"
  },
  {"className" : "NasalSpray",
-  "imglink" : "https://xlear.com/product/xylitol-and-saline-nasal-spray-1-5-fl-oz-metered-dose/",
-  "imgsrc" : "https://xlear.com/wp-content/uploads/2023/05/XLMPlus_WP-opt.png",
+  "imglink" : "https://www.cvs.com/shop/xlear-saline-nasal-spray-1-5-fl-oz-prodid-1030532?skuId=608622&cgaa=QWxsb3dHb29nbGVUb0FjY2Vzc0NWU1BhZ2Vz&cid=ps_ur_pla_control&gad_source=1&gclid=EAIaIQobChMI28Tf8OW0igMVnyutBh0JxSD5EAQYASABEgK06_D_BwE&gclsrc=aw.ds",
+  "imgsrc" : "https://www.cvs.com/bizcontent/merchandising/productimages/high_res/70059600000.jpg?im=Resize=(1000,1000),aspect=ignore",
   "buttonprice" : "$15",
   "buttonlink" : "https://xlear.com/product/xylitol-and-saline-nasal-spray-1-5-fl-oz-metered-dose/",
   "description" : "Nasal spray: Xylitol",
@@ -100,7 +100,7 @@
   "imgsrc" : "https://pics.walgreens.com/prodimg/162647/900.jpg",
   "buttonprice" : "",
   "buttonlink" : "https://www.walgreens.com/store/c/natrol-melatonin-5mg,-sleep-support,-extra-strength,-time-release-tablets/ID=prod3950575-product",
-  "description" : "Sleep aid",
+  "description" : "Melatonin",
   "alttext" : "Melatonin"
   },
   {"className" : "Melatonin2",
@@ -130,14 +130,14 @@
 {"className" : "garlic",
 "imglink" : "https://hometownproducecompany.com/cdn/shop/products/garlic1.jpg?v=1586307686",
 "imgsrc" : "https://i5.walmartimages.com/seo/Garlic-Bulb-Fresh-Whole-Each_a4f114d9-93ab-4d39-a8d6-9170536f57a9.f9f8e58c8e3e74894050c7c2267437e3.jpeg",
-"buttonprice" : "Cheap",
+"buttonprice" : "",
 "buttonlink" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8581659/",
-"description" : "Raw garlic",
+"description" : "Raw, cooked garlic",
 "alttext" : "garlic bulb"
 }],
 
 
-  "aftercovid" : 
+  "healcovid" : 
   [{
   "className" : "OreganOil4Viruses",
   "imglink" : "https://www.healthline.com/health/oregano-oil-for-cold",
